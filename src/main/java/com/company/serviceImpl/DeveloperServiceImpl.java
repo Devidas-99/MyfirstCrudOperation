@@ -1,23 +1,31 @@
 package com.company.serviceImpl;
 
+import com.company.controller.DeveloperController;
 import com.company.entity.Developer;
 import com.company.helper.DeveloperId;
 import com.company.repository.DeveloperRepository;
 import com.company.service.DeveloperService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 import java.util.stream.Collectors;
 
 @Service
 public class DeveloperServiceImpl implements DeveloperService {
+
+private static final Logger log = LoggerFactory.getLogger(DeveloperServiceImpl.class);
+
 
     @Autowired
     private DeveloperRepository developerRepository;
 
     @Override
     public String saveDeveloper (Developer developer){
+        log.info("save developer successfully" + developer);
         String developerID = DeveloperId.DeveloperID(developer);
         developer.setDeveloperId(developerID);
         Developer savedDeveloper = developerRepository.save(developer);
@@ -27,12 +35,14 @@ public class DeveloperServiceImpl implements DeveloperService {
     @Override
     public List<Developer> getAllDeveloper() {
         List<Developer> developerList = developerRepository.findAll();
+        log.info("featch all developer , count{}" +developerList.size());
         return developerList;
     }
 
     @Override
     public Developer getDeveloperById(int id) {
         Developer developer =  developerRepository.findById(id).orElseThrow(() -> new NullPointerException("Developer with id not found " +id));
+        log.info("Student featch by id" +developer);
         return developer;
 
     }
@@ -40,12 +50,14 @@ public class DeveloperServiceImpl implements DeveloperService {
     @Override
     public String deleteDeveloperById(int id) {
         developerRepository.deleteById(id);
+
         return "Developer deleted";
     }
 
     @Override
     public Developer updateDeveloper(int id, Developer newData) {
         Developer developer = developerRepository.findById(id).orElseThrow(()-> new NullPointerException("Developer is not found with this id" +id));
+        log.error("Developer found with this id" +developer);
         System.err.println("old developer from db" +developer);
         System.err.println("Developer object with values to be updated"+newData);
         developer.setFName(newData.getFName());
@@ -54,6 +66,7 @@ public class DeveloperServiceImpl implements DeveloperService {
         developer.setCity(newData.getCity());
         developer.setSalaryl(newData.getSalaryl());
         Developer updatedDeveloper = developerRepository.save(developer);
+        log.info("Updated developer" +updatedDeveloper);
         System.err.println("Developer with updated value "+updatedDeveloper);
         return updatedDeveloper ;
     }
