@@ -1,0 +1,153 @@
+2025-08-21T14:05:29.852+05:30 ERROR 17804 --- [MyFirstCRUDOperation] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.excel' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.excel
+    Value: "DEBUG   # replace with your package name"
+    Origin: class path resource [application.properties] - 25:25
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG   # replace with your package name)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-08-21T14:09:37.942+05:30 ERROR 12000 --- [MyFirstCRUDOperation] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.excel' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.excel
+    Value: "DEBUG   # replace with your package name"
+    Origin: class path resource [application.properties] - 25:25
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG   # replace with your package name)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-08-21T14:11:47.972+05:30 ERROR 4228 --- [MyFirstCRUDOperation] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.excel' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.excel
+    Value: "com.company  # replace with your package name"
+    Origin: class path resource [application.properties] - 25:25
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.com.company  # replace with your package name)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-08-21T14:13:35.469+05:30 ERROR 15020 --- [MyFirstCRUDOperation] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.com.company' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.com.company
+    Value: "DEBUG  # replace with your package name"
+    Origin: class path resource [application.properties] - 25:27
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG  # replace with your package name)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-08-21T14:17:01.921+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] c.c.MyFirstCrudOperationApplication      : Starting MyFirstCrudOperationApplication using Java 24.0.2 with PID 6196 (E:\SpringbootPoject\MyFirstCRUDOperation\MyFirstCRUDOperation\target\classes started by DEVA in E:\SpringbootPoject\MyFirstCRUDOperation\MyFirstCRUDOperation)
+2025-08-21T14:17:01.944+05:30 DEBUG 6196 --- [MyFirstCRUDOperation] [main] c.c.MyFirstCrudOperationApplication      : Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-21T14:17:01.948+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] c.c.MyFirstCrudOperationApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-08-21T14:17:04.814+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-21T14:17:05.025+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 1 JPA repository interface.
+2025-08-21T14:17:06.721+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-21T14:17:06.771+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-21T14:17:06.773+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-21T14:17:06.968+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-21T14:17:06.969+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4841 ms
+2025-08-21T14:17:07.598+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-21T14:17:07.756+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-21T14:17:07.892+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-21T14:17:08.868+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-21T14:17:08.961+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-21T14:17:10.076+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@343db2f6
+2025-08-21T14:17:10.083+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-21T14:17:10.265+05:30  WARN 6196 --- [MyFirstCRUDOperation] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-21T14:17:10.271+05:30  WARN 6196 --- [MyFirstCRUDOperation] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-21T14:17:10.346+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-21T14:17:12.762+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-21T14:17:12.909+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21T14:17:13.998+05:30  WARN 6196 --- [MyFirstCRUDOperation] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-21T14:17:14.152+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-08-21T14:17:15.453+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-21T14:17:15.490+05:30  INFO 6196 --- [MyFirstCRUDOperation] [main] c.c.MyFirstCrudOperationApplication      : Started MyFirstCrudOperationApplication in 15.422 seconds (process running for 16.818)
+2025-08-21T14:17:38.770+05:30  INFO 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-21T14:17:38.770+05:30  INFO 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-21T14:17:38.773+05:30  INFO 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-21T14:17:39.474+05:30  INFO 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-3] c.c.serviceImpl.DeveloperServiceImpl     : Student featch by idDeveloper(id=1, fName=Parth, lName=Patil, age=27, city=Pune, gender=Male, salaryl=30000000, yearOfBirth=0, developerId=null)
+2025-08-21T14:17:39.474+05:30 DEBUG 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-3] c.c.controller.DeveloperController       : Request to get Developer by id : {}Developer(id=1, fName=Parth, lName=Patil, age=27, city=Pune, gender=Male, salaryl=30000000, yearOfBirth=0, developerId=null)
+2025-08-21T14:20:23.456+05:30  INFO 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-5] c.c.serviceImpl.DeveloperServiceImpl     : featch all developer , count{}14
+2025-08-21T14:20:23.456+05:30 DEBUG 6196 --- [MyFirstCRUDOperation] [http-nio-8080-exec-5] c.c.controller.DeveloperController       : Request to get all developer list :{}[Developer(id=1, fName=Parth, lName=Patil, age=27, city=Pune, gender=Male, salaryl=30000000, yearOfBirth=0, developerId=null), Developer(id=3, fName=Devvidas, lName=Dhongade, age=25, city=nashik, gender=Male, salaryl=0, yearOfBirth=0, developerId=null), Developer(id=4, fName=Mrunal, lName=Amrutkar, age=24, city=Amalner, gender=Female, salaryl=0, yearOfBirth=0, developerId=null), Developer(id=5, fName=Om, lName=Handore, age=24, city=Nashik, gender=Male, salaryl=0, yearOfBirth=0, developerId=null), Developer(id=6, fName=Parth, lName=Mankar, age=24, city=Akola, gender=Male, salaryl=0, yearOfBirth=0, developerId=null), Developer(id=7, fName=Parth, lName=Mankar, age=24, city=Akola, gender=Male, salaryl=0, yearOfBirth=0, developerId=null), Developer(id=8, fName=Parth, lName=Mankar, age=24, city=Akola, gender=Male, salaryl=57779789, yearOfBirth=0, developerId=null), Developer(id=9, fName=Akash, lName=Shinde, age=25, city=Nashik, gender=Male, salaryl=21000000, yearOfBirth=1999, developerId=65Shinde99), Developer(id=10, fName=Om, lName=Bhor, age=22, city=Nashik, gender=Male, salaryl=9000000, yearOfBirth=2001, developerId=OBhor1), Developer(id=11, fName=Roshan, lName=Bhor, age=22, city=Nashik, gender=Male, salaryl=9000000, yearOfBirth=2001, developerId=RBhor01), Developer(id=12, fName=Roshan, lName=Bhor, age=22, city=Nashik, gender=Male, salaryl=9000000, yearOfBirth=1999, developerId=RBhor99), Developer(id=13, fName=Roshan, lName=Bhor, age=22, city=Nashik, gender=Male, salaryl=9000000, yearOfBirth=2011, developerId=RBhor11), Developer(id=14, fName=Om, lName=Dhongade, age=16, city=Nashik, gender=Male, salaryl=797982, yearOfBirth=2010, developerId=null), Developer(id=15, fName=Sarthak, lName=Bhor, age=15, city=Nashik, gender=Male, salaryl=797982, yearOfBirth=2011, developerId=null)]
+2025-08-21T14:27:38.776+05:30  INFO 6196 --- [MyFirstCRUDOperation] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-21T14:27:38.800+05:30  INFO 6196 --- [MyFirstCRUDOperation] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-21T14:27:38.810+05:30  INFO 6196 --- [MyFirstCRUDOperation] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-21T14:27:38.816+05:30  INFO 6196 --- [MyFirstCRUDOperation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-21T14:27:38.835+05:30  INFO 6196 --- [MyFirstCRUDOperation] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
