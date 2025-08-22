@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("developer")
+@RequestMapping("/developer")
 public class DeveloperController {
 
     private static Logger log = LoggerFactory.getLogger(DeveloperController.class);
@@ -22,7 +22,7 @@ public class DeveloperController {
     @Autowired
     private DeveloperService developerService;
 
-    @PostMapping("/add")
+    @PostMapping("/addDeveloper")
     public ResponseEntity<String> addDeveloper(@RequestBody Developer developer){
         System.err.println(developer);
         developerService.saveDeveloper(developer);

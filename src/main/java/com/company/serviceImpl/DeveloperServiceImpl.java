@@ -1,6 +1,5 @@
 package com.company.serviceImpl;
 
-import com.company.controller.DeveloperController;
 import com.company.entity.Developer;
 import com.company.helper.DeveloperId;
 import com.company.repository.DeveloperRepository;
@@ -9,9 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-
 import java.util.stream.Collectors;
 
 @Service
@@ -23,9 +20,16 @@ private static final Logger log = LoggerFactory.getLogger(DeveloperServiceImpl.c
     @Autowired
     private DeveloperRepository developerRepository;
 
+
+
     @Override
     public String saveDeveloper (Developer developer){
         log.info("save developer successfully" + developer);
+        // ✅ Calculate Age from DOB
+        if (developer.getDob() != null) {
+            int calculatedAge =java.time.Period.between(developer.getDob().toLocalDate(),java.time.LocalDate.now()).getYears();
+            developer.setAge(calculatedAge);
+        }
         String developerID = DeveloperId.DeveloperID(developer);
         developer.setDeveloperId(developerID);
         Developer savedDeveloper = developerRepository.save(developer);
@@ -64,7 +68,7 @@ private static final Logger log = LoggerFactory.getLogger(DeveloperServiceImpl.c
         developer.setLName(newData.getLName());
         developer.setAge(newData.getAge());
         developer.setCity(newData.getCity());
-        developer.setSalaryl(newData.getSalaryl());
+        developer.setSalary(newData.getSalary());
         Developer updatedDeveloper = developerRepository.save(developer);
         log.info("Updated developer" +updatedDeveloper);
         System.err.println("Developer with updated value "+updatedDeveloper);

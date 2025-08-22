@@ -5,17 +5,16 @@ import com.company.entity.Developer;
 public class DeveloperId {
 
     public static String DeveloperID(Developer developer){
-      String fristname =  developer.getFName();
-      String lastname =    developer.getLName();
+      String fName =  developer.getFName();
+      String lName =    developer.getLName();
       int YOB =  developer.getYearOfBirth();
 
-       char  a = fristname.charAt(0);
+       char  a = fName.charAt(0);
 
         int lastTwo = YOB % 100;
         String b = String.format("%02d", lastTwo);
 
-
-       String developerID = a + lastname + b;
+       String developerID = a + lName + b;
 
       return developerID;
 
