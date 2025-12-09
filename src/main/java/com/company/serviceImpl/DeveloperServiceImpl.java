@@ -27,7 +27,7 @@ private static final Logger log = LoggerFactory.getLogger(DeveloperServiceImpl.c
         log.info("save developer successfully" + developer);
         // ✅ Calculate Age from DOB
         if (developer.getDob() != null) {
-            int calculatedAge =java.time.Period.between(developer.getDob().toLocalDate(),java.time.LocalDate.now()).getYears();
+            int calculatedAge = java.time.Period.between(developer.getDob().toLocalDate(),java.time.LocalDate.now()).getYears();
             developer.setAge(calculatedAge);
         }
         String developerID = DeveloperId.DeveloperID(developer);

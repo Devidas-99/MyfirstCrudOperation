@@ -13,7 +13,7 @@ public class BirthDayScheduler {
     @Autowired
     private DeveloperRepository developerRepository;
 
-    // ✅ Run everyday at 12am midnight
+    // ✅ Run Every day at 12am midnight
     @Scheduled(cron = "0 0 0 * * ?")
     @Transactional
     public void updateAgeOnBirthday() {
